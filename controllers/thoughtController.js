@@ -44,6 +44,8 @@ module.exports = {
             //push thought's ID to the user's thoughts array
             user.thoughts.push(thought._id);
 
+            await user.save()
+
             res.json(thought);
 
         } catch (error) {
@@ -54,7 +56,7 @@ module.exports = {
     //update a thought
     async updateThought(req, res) {
         try {
-            const thought = await Thought.findeOneAndUpdate(
+            const thought = await Thought.findOneAndUpdate(
                 { _id: req.params.thoughtId},
                 {$set: req.body}
             )
