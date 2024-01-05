@@ -20,8 +20,15 @@ connection.once('open', async () =>{
     if (userCheck.length) {
         await connection.dropCollection('users')
     }
+
+    const thoughts = [...getRandomThought(1)]
+    const users = [];
+
+    await User.collection.insertMany(users)
+    console.table(users)
+    console.timeEnd('complete')
+    process.exit(0)
 });
 
-//empty arrays for randomly generated thoughts and users
-const thoughts = [...getRandomThought(1)]
-const users = [];
+
+

@@ -13,7 +13,4 @@ db.once('open', () => {
     app.listen(PORT, () => {
         console.log(`API server for app is running on ${PORT}!`)
     });
-})
-.catch((err) => {
-    console.error('Mongo connection error:', err.message)
-});
+}); 
