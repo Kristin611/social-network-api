@@ -102,7 +102,7 @@ module.exports = {
             }
            
 
-            res.json({ message: `user is now friends with ${user.username}`})
+            res.json({ message: `You are now friends with ${user.username}`})
         } catch (error) {
             console.log(error)
             res.status(500).json(error)
@@ -120,7 +120,7 @@ module.exports = {
             }
            
 
-            res.json({ message: `user hates ${user.username}`})
+            res.json({ message: `You have deleted ${user.username} from your friend's list`})
         } catch (error) {
             console.log(error)
             res.status(500).json(error)
