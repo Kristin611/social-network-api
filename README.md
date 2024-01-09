@@ -10,3 +10,7 @@ The second video demonstrates how to get, create, update, and delete thoughts, a
 
 https://drive.google.com/file/d/1nlbACpWVo8jTXgatHz9UNrhQsrsYaM6e/view
 
+https://watch.screencastify.com/v/fUF3LMvkyGQXZeZiijX6
+
+
+
