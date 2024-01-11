@@ -80,7 +80,7 @@ module.exports = {
             }
 
             //remove a user's associated thoughts when deleted
-            await User.deleteMany({ _id: { $in: user.thoughts}});
+            await Thought.deleteMany({ _id: { $in: user.thoughts}});
             res.json({ message: 'User and thoughts deleted!'})
 
             res.json(user);
